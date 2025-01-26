@@ -1,0 +1,33 @@
+{
+  "name": "smpc-eigenlayer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "dev:backend": "node backend/server.js",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.64.2",
+    "@wagmi/connectors": "^5.7.5",
+    "@wagmi/core": "^2.16.3",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^5.0.0",
+    "styled-components": "^6.1.14",
+    "swr": "^2.2.4",
+    "tailwindcss": "^3.3.0",
+    "viem": "^2.22.14",
+    "wagmi": "^2.14.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.52",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  }
+}

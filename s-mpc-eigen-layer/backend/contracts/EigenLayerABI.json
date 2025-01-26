@@ -1,0 +1,30 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {"internalType": "bytes32", "name": "taskId", "type": "bytes32"},
+        {"internalType": "uint256", "name": "reward", "type": "uint256"}
+      ],
+      "name": "claimReward",
+      "outputs": [{"internalType": "bool", "name": "", "type": "bool"}],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {"internalType": "tuple", "name": "taskParameters", "type": "tuple", 
+          "components": [
+            {"internalType": "string", "name": "computationType", "type": "string"},
+            {"internalType": "uint256", "name": "dataSize", "type": "uint256"},
+            {"internalType": "uint256", "name": "complexity", "type": "uint256"},
+            {"internalType": "uint256", "name": "requiredStake", "type": "uint256"}
+          ]
+        }
+      ],
+      "name": "validateTask",
+      "outputs": [{"internalType": "bool", "name": "", "type": "bool"}],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+} 
